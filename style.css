@@ -1,0 +1,203 @@
+body {
+	background-color: grey;
+}
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.robots {
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: black;
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+} 
+
+.eyes {
+	display: flex;
+	flex-flow: row;
+	transition: 1s ease-in;
+	
+}
+.eyes:hover{
+	transform: scale(0.8);
+}
+
+.head:hover {
+	width: 300px;
+    transition: 1s ease-in-out;
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	margin: 0 auto;
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content: center;
+
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+	transition: all 3s;
+} 
+
+.left_arm { 
+	margin-right: 10px; 
+	transform: skewX(-25deg);
+	
+} 
+.left_arm:hover, .right_arm:hover {
+	transform: rotate(1080deg);
+}
+
+.right_arm { 
+	margin-left: 10px; 
+	transform: skewX(25deg);
+} 
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+} 
+
+.tie{
+	display: flex;
+	flex-flow: column;
+}
+.t {
+	position: relative; 
+	width: 24px; 
+	height: 20px; 
+	border-radius: 0px;
+	background-color: white; 
+	bottom: 190px;
+	/*top: -190px;*/ 
+	/*left: 20px; */
+}
+
+
+.t1 {
+
+	position: relative; 
+	width: 24px; 
+	height: 100px; 
+	border-radius: 0px;
+	background-color: white; 
+	bottom: 190px; 
+
+	/*left: 20px; */
+}
+.t2 {
+	position: relative;
+	width: 0;
+      height: 0px;
+      border-left: 12px  solid  black;
+      border-right: 12px solid  black;
+      border-top:20px solid transparent;
+      background-color: white;
+      bottom: 190px;
+}
+
+.tie2 {
+	transition: all 3s;
+}
+.tie2:hover {
+	transform: translate(0px,10px);
+
+}
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+	display: flex;
+	/*flex-flow: row;
+	justify-content: space-around;*/
+
+
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+} 
+
+.left_leg { 
+	margin-left: 45px;
+	/*padding-top: 10px;*/
+
+
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_leg { 
+	margin-left: 30px; 
+	/*padding-top: 10px;*/
+
+
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;  
+} 
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
+
+
+.t3 {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	width: 0;
+      height: 10px;
+      border-left: 12px  solid  black;
+      border-right: 12px solid  black;
+      border-top:40px solid transparent;
+      border-radius: 7px;
+      background-color: white;
+      bottom: -10px;
+      left: 50px;
+}
+
+
